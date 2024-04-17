@@ -1,7 +1,9 @@
-const app = require('express')();
+const
+  app = require('express')(),
+  PORT = process.env.PORT || 3000;
 
-app.get('/', (req, res)=> res.end('success'));
-app.get('captcha', (req, res)=> {
+app.get('/', (req, res) => res.end('success'));
+app.get('/captcha', (req, res) => {
 
   res.end('End point is working, Go further..')
 })
